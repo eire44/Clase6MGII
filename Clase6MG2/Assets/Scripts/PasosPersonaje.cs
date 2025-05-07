@@ -32,7 +32,7 @@ public class PasosPersonaje : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
-        Vector3 direccion = new Vector3(x, 0, y).normalized;
+        Vector3 direccion = new Vector3(y, 0, -x).normalized;
         Vector3 nuevaVelocidad = new Vector3(direccion.x * velocidad, rb.velocity.y, direccion.z * velocidad);
         rb.velocity = nuevaVelocidad;
 
@@ -71,7 +71,6 @@ public class PasosPersonaje : MonoBehaviour
             paso1 = 6;
             paso2 = 7;
         }
-        Debug.Log(collision.gameObject.tag);
     }
 
 

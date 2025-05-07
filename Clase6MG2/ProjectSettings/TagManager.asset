@@ -8,6 +8,7 @@ TagManager:
   - Grava
   - Pasto
   - Nieve
+  - Jugador
   layers:
   - Default
   - TransparentFX
